@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<ReadDefinitions Version="Fraise 0.7.2 Amplicon v1.1">
+	<ReadDefinition Name="FirstRead">
+		<!-- Focus -->
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IMTIncubation" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Blank -->
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT0" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Target 1 -->
+		<End ChemistryName="PrimeT1" />
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT1" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT1" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT1" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Target 2 -->
+		<End ChemistryName="PrimeT2" />
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT2" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT2" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT2" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Target 3 -->
+		<End ChemistryName="PrimeT3" />
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT3" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT3" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT3" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Target 4 -->
+		<End ChemistryName="PrimeT4" />
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT4" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT4" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT4" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Target 5 -->
+		<End ChemistryName="PrimeT5" />
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT5" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT5" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT5" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Target 6 -->
+		<End ChemistryName="PrimeT6" />
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT6" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT6" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT6" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Target 7 -->
+		<End ChemistryName="PrimeT7" />
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT7" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT7" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT7" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Target 8 -->
+		<End ChemistryName="PrimeT8" />
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT8" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT8" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT8" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Target 9 -->
+		<End ChemistryName="PrimeT9" />
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT9" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT9" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT9" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Target 10 -->
+		<End ChemistryName="PrimeT10" />
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT10" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT10" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT10" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<!-- Blank -->
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT0" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT0" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT0" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT0" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT0" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT0" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT0" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT0" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="IncubationPrep" />
+		<End ChemistryName="IncubationT0" />
+		<Imaging ChemistryName="ImagingPrep" Cycles="1"/>
+		
+		<End ChemistryName="Cleanup"/>
+	</ReadDefinition>
+	
+	<ReadDefinition Name="IndexRead1" IsIndexed="true">
+	</ReadDefinition>
+	
+	<ReadDefinition Name="SecondRead" IsIndexed="false">
+	</ReadDefinition>
+	
+	<ReadDefinition Name="IndexRead2" IsIndexed="true">
+	</ReadDefinition>
+	
+</ReadDefinitions>

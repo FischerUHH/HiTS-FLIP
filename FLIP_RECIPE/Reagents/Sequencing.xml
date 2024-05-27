@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Reagents Name="Tremor Reagents" Version="Selector Valve Positions v2.2">
+  <Reagent Name="NAOH" Description="Sodium Hydroxide" SelectorValvePosition="1" />
+  <Reagent Name="HYB" Description="Hybridisation Buffer" SelectorValvePosition="2" />
+  <Reagent Name="PR2" Description="Incorporation Buffer" SelectorValvePosition="3" />
+  <Reagent Name="PIB" Description="Pre Imaging Buffer" SelectorValvePosition="4" />
+  <Reagent Name="T1" Description="Target 1" SelectorValvePosition="5" />
+  <Reagent Name="T2" Description="Target 2" SelectorValvePosition="6" />
+  <Reagent Name="T3" Description="Target 3" SelectorValvePosition="7" />
+  <Reagent Name="T4" Description="Target 4" SelectorValvePosition="8" />
+  <Reagent Name="T5" Description="Target 5" SelectorValvePosition="9" />
+  <Reagent Name="T6" Description="Target 6" SelectorValvePosition="10" />
+  <Reagent Name="T7" Description="Target 7" SelectorValvePosition="11" />
+  <Reagent Name="T8" Description="Target 8" SelectorValvePosition="12" />
+  <Reagent Name="T9" Description="Target 9" SelectorValvePosition="13" />
+  <Reagent Name="T10" Description="Target 10" SelectorValvePosition="14" />
+  <Reagent Name="PW1" Description="Water" SelectorValvePosition="15" />
+  <Reagent Name="PW2" Description="Water" SelectorValvePosition="16" />
+  <Reagent Name="TMP" Description="Template" SelectorValvePosition="17" />
+  <Reagent Name="C1" Description="Custom 1 Primer Mix" SelectorValvePosition="18" />
+  <Reagent Name="FM1" Description="Fiducial Mark 1" SelectorValvePosition="19" />
+  <Reagent Name="FM2" Description="Fiducial Mark 2" SelectorValvePosition="20" />
+  <Reagent Name="IMT" Description="IMT" SelectorValvePosition="21" />
+  <Reagent Name="FAD" Description="Formamide" SelectorValvePosition="22" />
+</Reagents>

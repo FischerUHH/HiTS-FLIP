@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Protocol Version="Fraise 0.7.2 Amplicon v1.1">
+	<ChemistryRef ChemistryName="PrimeBuffers" />
+	<ReadRef ReadName="FirstRead" />  
+	<ChemistryRef ChemistryName="Cleanup" />
+  </Protocol>

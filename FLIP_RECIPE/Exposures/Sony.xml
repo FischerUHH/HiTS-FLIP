@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Exposures>
+	<Exposure Name="A" Start="1037" IsIndexed="true" Ramp="0"/>
+	<Exposure Name="T" Start="500" IsIndexed="true" Ramp="0"/>
+	<Exposure Name="C" Start="1037" IsIndexed="true" Ramp="0"/>
+	<Exposure Name="G" Start="500" IsIndexed="true" Ramp="0"/>
+   <Exposure EndCycle="999"  Name="A" Start="2500" IsIndexed="false" Read="1" StartCycle="1"  /><!--READ1-->
+   <Exposure EndCycle="999"  Name="T" Start="1200" IsIndexed="false" Read="1" StartCycle="1"  /><!--READ1-->
+   <Exposure EndCycle="999"  Name="C" Start="2500" IsIndexed="false" Read="1" StartCycle="1"  /><!--READ1-->
+   <Exposure EndCycle="999"  Name="G" Start="1200" IsIndexed="false" Read="1" StartCycle="1"  /><!--READ1-->
+   <Exposure EndCycle="999"  Name="A" Start="2500" IsIndexed="false" Read="2" StartCycle="1"  /><!--READ2-->
+   <Exposure EndCycle="999"  Name="T" Start="1200" IsIndexed="false" Read="2" StartCycle="1"  /><!--READ2-->
+   <Exposure EndCycle="999"  Name="C" Start="2500" IsIndexed="false" Read="2" StartCycle="1"  /><!--READ2-->
+   <Exposure EndCycle="999"  Name="G" Start="1200" IsIndexed="false" Read="2" StartCycle="1"  /><!--READ2-->
+</Exposures>

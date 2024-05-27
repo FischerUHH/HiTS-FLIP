@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<ChemistryDefinitions Version="v3_MiSeq_Amplicon_Klein">
+	<ChemistryDefinition Name="PrimeBuffers">
+		<ChemistryStep Description="PrimeBuffers" Repeat="1">
+		<!-- -->
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="1000"/>
+			<PumpToFlowcell ReagentName="NAOH" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="300"/>
+			<PumpToFlowcell ReagentName="HYB" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="300"/>
+			<PumpToFlowcell ReagentName="PIB" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="300"/>
+			<PumpToFlowcell ReagentName="FAD" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="300"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="300"/>
+			<PumpToFlowcell ReagentName="IMT" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="300"/>
+		<!-- -->	
+			<PumpToFlowcell ReagentName="FM1" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="300"/>
+			<PumpToFlowcell ReagentName="FM2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="300"/>
+		
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	
+	
+	
+	<ChemistryDefinition Name="IMTIncubation">
+		<ChemistryStep Description="GetIMT" Repeat="1" IsIncorporation="true">
+			<Temp Duration="0" Temperature="60"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="500" Solution="0" DispenseRate="7500" Volume="120"/>
+			<PumpToFlowcell ReagentName="IMT" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/> <!-- 300 ul -->
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="10"/>
+			<Temp Duration="0" Temperature="65"/>
+			<Wait Duration="60000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="5"/>
+			<DispenseAndWait Duration="30000"/>
+			<Temp Duration="0" Temperature="22"/>
+			<Wait Duration="10000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="100"/>
+			<Wait Duration="60000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	
+
+ 
+	<ChemistryDefinition Name="IncubationPrep">
+		<ChemistryStep Description="NaOHWash" Repeat="8">
+			<Temp Duration="0" Temperature="22"/>
+			<PumpToFlowcell ReagentName="NAOH" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="50"/>
+			<DispenseAndWait DispenseRate="7500" Duration="31000"/>
+		</ChemistryStep>
+		
+		<ChemistryStep Description="PR2Wash" Repeat="1">
+			<Temp Duration="0" Temperature="22"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+		
+		<ChemistryStep Description="FormamideWash" Repeat="3">
+			<Temp Duration="0" Temperature="40"/>
+			<PumpToFlowcell ReagentName="FAD" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="500"/> <!-- 20 -->
+			<DispenseAndWait DispenseRate="7500" Duration="62000"/>
+		</ChemistryStep>
+		
+		<ChemistryStep Description="PR2Push" Repeat="2">
+			<Temp Duration="0" Temperature="45"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="10"/>
+			<DispenseAndWait DispenseRate="7500" Duration="62000"/>
+		</ChemistryStep>
+		
+		<ChemistryStep Description="PR2Wash" Repeat="1">
+			<Temp Duration="0" Temperature="22"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+		
+		<ChemistryStep Description="FM1Incubation" Repeat="2">
+			<Temp Duration="0" Temperature="20"/>
+			<PumpToFlowcell ReagentName="FM1" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="25"/>
+			<DispenseAndWait DispenseRate="7500" Duration="303000"/>
+		</ChemistryStep>
+		
+		<ChemistryStep Description="TempRamp" Repeat="1" IsIncorporation="true">
+			<Temp Duration="0" Temperature="75"/>
+			<Wait Duration="10000"/>
+			<Temp Duration="5000" Temperature="74"/>
+			<Temp Duration="5000" Temperature="73"/>
+			<Temp Duration="5000" Temperature="72"/>
+			<Temp Duration="5000" Temperature="71"/>
+			<Temp Duration="5000" Temperature="70"/>
+			<Temp Duration="5000" Temperature="69"/>
+			<Temp Duration="5000" Temperature="68"/>
+			<Temp Duration="5000" Temperature="67"/>
+			<Temp Duration="5000" Temperature="66"/>
+			<Temp Duration="5000" Temperature="65"/>
+			<Temp Duration="5000" Temperature="64"/>
+			<Temp Duration="5000" Temperature="63"/>
+			<Temp Duration="5000" Temperature="62"/>
+			<Temp Duration="5000" Temperature="61"/>
+			<Temp Duration="5000" Temperature="60"/>
+			<Temp Duration="5000" Temperature="59"/>
+			<Temp Duration="5000" Temperature="58"/>
+			<Temp Duration="5000" Temperature="57"/>
+			<Temp Duration="5000" Temperature="56"/>
+			<Temp Duration="5000" Temperature="55"/>
+			<Temp Duration="5000" Temperature="54"/>
+			<Temp Duration="5000" Temperature="53"/>
+			<Temp Duration="5000" Temperature="52"/>
+			<Temp Duration="5000" Temperature="51"/>
+			<Temp Duration="5000" Temperature="50"/>
+			<Temp Duration="5000" Temperature="49"/>
+			<Temp Duration="5000" Temperature="48"/>
+			<Temp Duration="5000" Temperature="47"/>
+			<Temp Duration="5000" Temperature="46"/>
+			<Temp Duration="5000" Temperature="45"/>
+			<Temp Duration="5000" Temperature="44"/>
+			<Temp Duration="5000" Temperature="43"/>
+			<Temp Duration="5000" Temperature="42"/>
+			<Temp Duration="5000" Temperature="41"/>
+			<Temp Duration="5000" Temperature="40"/>
+			<Temp Duration="5000" Temperature="39"/>
+			<Temp Duration="5000" Temperature="38"/>
+			<Temp Duration="5000" Temperature="37"/>
+		</ChemistryStep>
+		
+		<ChemistryStep Description="FM2Incubation" Repeat="2">
+			<Temp Duration="0" Temperature="20"/>
+			<PumpToFlowcell ReagentName="FM2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="25"/>
+			<DispenseAndWait DispenseRate="7500" Duration="304000"/>
+		</ChemistryStep>
+		
+		<ChemistryStep Description="PR2PushFM" Repeat="2">
+			<Temp Duration="0" Temperature="20"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="10"/>
+			<DispenseAndWait DispenseRate="7500" Duration="65000"/>
+		</ChemistryStep>
+		
+		<ChemistryStep Description="HybridisationBufferWash" Repeat="3">
+			<Temp Duration="0" Temperature="22"/>
+			<PumpToFlowcell ReagentName="HYB" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="75"/>
+			<DispenseAndWait DispenseRate="7500" Duration="66000"/>
+		</ChemistryStep>
+		
+	</ChemistryDefinition>
+	
+	
+	
+	
+	<ChemistryDefinition Name="ImagingPrep">
+		<ChemistryStep Description="PreImagingBufferWash" Repeat="1">
+			<Temp Duration="0" Temperature="22"/>
+			<PumpToFlowcell ReagentName="PIB" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="250"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	
+	
+	
+	<ChemistryDefinition Name="IncubationT0">
+	<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="PIB" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+	</ChemistryStep>
+		<ChemistryStep Description="Blank" Repeat="10">
+			<PumpToFlowcell ReagentName="PIB" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+		<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="IncubationT1">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T1" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incubation" Repeat="10">
+			<PumpToFlowcell ReagentName="T1" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="IncubationT2">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incubation" Repeat="10">
+			<PumpToFlowcell ReagentName="T2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="IncubationT3">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T3" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incubation" Repeat="10">
+			<PumpToFlowcell ReagentName="T3" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="IncubationT4">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T4" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incubation" Repeat="10">
+			<PumpToFlowcell ReagentName="T4" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="IncubationT5">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T5" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incubation" Repeat="10">
+			<PumpToFlowcell ReagentName="T5" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="IncubationT6">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T6" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incubation" Repeat="10">
+			<PumpToFlowcell ReagentName="T6" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="IncubationT7">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T7" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incubation" Repeat="10">
+			<PumpToFlowcell ReagentName="T7" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="IncubationT8">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T8" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incubation" Repeat="10">
+			<PumpToFlowcell ReagentName="T8" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="IncubationT9">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T9" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incubation" Repeat="10">
+			<PumpToFlowcell ReagentName="T9" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="IncubationT10">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T10" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="100"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incubation" Repeat="10">
+			<PumpToFlowcell ReagentName="T10" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="180000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	
+	
+	
+	<ChemistryDefinition Name="PrimeT1">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T1" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="PrimeT2">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="PrimeT3">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T3" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="PrimeT4">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T4" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="PrimeT5">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T5" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="PrimeT6">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T6" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="PrimeT7">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T7" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="PrimeT8">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T8" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="PrimeT9">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T9" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	<ChemistryDefinition Name="PrimeT10">
+		<ChemistryStep Description="Sip" Repeat="1">
+			<PumpToFlowcell ReagentName="T10" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+	
+	
+	
+	<ChemistryDefinition Name="Cleanup">
+		<ChemistryStep Description="SafeState" Repeat="1">
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="800"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+
+</ChemistryDefinitions>
