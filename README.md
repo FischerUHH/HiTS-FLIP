@@ -1,7 +1,11 @@
-# HiTS-FLIP
-'high-throughput sequencing–fluorescent ligand interaction profiling' (HiTS-FLIP) is an experiment which enables the study of target-molecules with millions of different DNA-Sequences in parallel on a fow cell of next generation sequencers.
+# Publication 
 
-There are two possible ways of examining the interactions between 
+# HiTS-FLIP
+'high-throughput sequencing–fluorescent ligand interaction profiling' (HiTS-FLIP) is an experiment which enables the study of target-molecules with millions of varying DNA-Sequences in parallel on a fow cell of next generation sequencers - in this case Illuminas MiSeq.
+
+In the corresponding publication we present two different ways of examining the interactions between target-molecule and DNA:
+1. The experiment can be carried out by connecting an external valve to the tubing and controlling it via USB. BY addition of specific wait-times to the `recipe`, in which the execution of the sequencers main program pauses, the switching of the valve can be triggered as a custom python script reads out the `log`-files which are generated as the routine proceedes. This approach is recommended for setups which require larger amounts of reagents than 3 mL.
+2. The second approach uses soley the internal valve of the MiSeq subsequent to a "regular" sequencing. Therefore a used cartridge of the previous sequencing run has to be customized by removing the RFID and the clear top cover. After cleaning the contained tubes carefully they can be filled with a solution of the desired target molecule.
 
 # Installation Guide
 ## Hardware Requirements
