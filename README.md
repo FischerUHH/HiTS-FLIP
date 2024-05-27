@@ -8,7 +8,7 @@ There are two possible ways of examining the interactions between
 For the experiments a MiSeq Sequencer (Illumina) was modified according to the corresponding manuscript. 
 
 > [!CAUTION] 
-> The University of Hamburg assumes no responsibility or liability for any errors or omissions in the content of this document. The information contained in this document is provided on an "as is" basis with no guarantees of completeness, accuracy,  usefulness or timeliness and without any warranties of any kind whatsoever, express or implied. 
+> The University of Hamburg assumes no responsibility or liability for any errors or omissions in the content of this document and repository. The information contained in this document is provided on an "as is" basis with no guarantees of completeness, accuracy,  usefulness or timeliness and without any warranties of any kind whatsoever, express or implied. 
 > 
 > Any modifications made to the MiSeq Sequencer are done at your own risk. The University of Hamburg will not be liable for any damages arising from the modification, use, or reliance on the modified MiSeq Sequencer, including but not limited to, direct, indirect, incidental, punitive, and consequential damages.
 >
