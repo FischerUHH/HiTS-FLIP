@@ -1,18 +1,18 @@
 # Publication 
 
 # HiTS-FLIP
-'high-throughput sequencing–fluorescent ligand interaction profiling' (HiTS-FLIP) is an experiment which enables the study of target-molecules with millions of varying DNA-Sequences in parallel on a fow cell of next generation sequencers - in this case Illuminas MiSeq.
+'High-throughput sequencing–fluorescent ligand interaction profiling' (HiTS-FLIP) is an experiment which enables the study of target-molecules with millions of varying DNA-Sequences in parallel on a fow cell of next generation sequencers - in this case Illuminas MiSeq.
 
 In the corresponding publication we present two different ways of examining the interactions between target-molecule and DNA:
-1. The experiment can be carried out by connecting an external valve to the tubing and controlling it via USB. By addition of specific wait-times to the `recipe`, in which the execution of the sequencers main program pauses, the switching of the valve can be triggered as a custom python script reads out the `log`-files which are generated as the routine proceeds. This approach is recommended for setups which require larger amounts of reagents than 3 mL.
-2. The second approach uses soley the internal valve of the MiSeq subsequent to a "regular" sequencing. Therefore a used cartridge of the previous sequencing run has to be customized by removing the RFID and the clear top cover. After cleaning the contained tubes carefully they can be filled with a solution of the desired target molecule.
+1. The experiment can be carried out by connecting an external valve to the tubing and controlling it via USB. By addition of specific wait-times to the recipe `HiTS_FLIP_RECIPE`, in which the execution of the sequencers main program pauses, the switching of the valve can be triggered as a custom python script reads out the `log`-files which are generated as the routine proceeds. This approach is recommended for setups which require larger amounts of reagents than 3 mL and enables the user to execute the sequencing and interaction profiling in one step with minimal hands-on time. 
+2. The second approach uses soley the internal valve of the MiSeq subsequent to a "regular" proprietary sequencing. Therefore a used cartridge of the previous sequencing run has to be customized by removing the RFID and the clear top cover. After cleaning the contained tubes carefully they can be filled with solutions of the desired target molecule. The Process can be started by removing the used RFIDs from the other used consumables and holding the RFIDs from a new kit against the DFID-sensors during setup. The "new" RFIDs are not corrupted by this process and can be used regularly later on. As a result of a complete redesign of the sequencers recipe yielding `FLIP_RECIPE` 
 
 # Installation Guide
 ## Hardware Requirements
 For the experiments a MiSeq Sequencer (Illumina) was modified according to the corresponding manuscript. 
 
 > [!CAUTION] 
-> The University of Hamburg assumes no responsibility or liability for any errors or omissions in the content of this document and repository. The information contained in this document is provided on an "as is" basis with no guarantees of completeness, accuracy,  usefulness or timeliness and without any warranties of any kind whatsoever, express or implied. 
+> The University of Hamburg assumes no responsibility or liability for any errors or omissions in the content of this document and repository. The information contained in this documentation is provided on an "as is" basis with no guarantees of completeness, accuracy,  usefulness or timeliness and without any warranties of any kind whatsoever, express or implied. 
 > 
 > Any modifications made to the MiSeq Sequencer are done at your own risk. The University of Hamburg will not be liable for any damages arising from the modification, use, or reliance on the modified MiSeq Sequencer, including but not limited to, direct, indirect, incidental, punitive, and consequential damages.
 >
