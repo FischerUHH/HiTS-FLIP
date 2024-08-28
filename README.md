@@ -1,4 +1,8 @@
 # Automated high-throughput selection of DNA aptamers using a common optical next-generation sequencer
+Alissa Drees, Christian Ahlers, Timothy Kehrer, Natascha Ehmke, Alice Frederike Rosa Grün, Charlotte Uetrecht, Zoya Ignatova, Udo Schumacher, Markus Fischer
+
+Pre-print: https://www.biorxiv.org/content/10.1101/2024.06.24.600375v1
+
 
 # 1 Publication 
 
