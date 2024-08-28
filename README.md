@@ -53,15 +53,7 @@ If using an external valve, install python and copy the folder `MiSeq_Hits_Flip`
 
 `reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f`
 
-into the terminal on the sequencer. Afterwards you use `getSerialAdress.py` to get the serial address and add it to line 27 `serialAdress = ''` in `setValve.py`. From now on the valve can be switched by the command `sv [position]`.
-
-When running the experiment you  
-
-
-
-
-
-
+into the terminal on the sequencer. Afterwards you can use `getSerialAdress.py` to get the serial address and add it to line 27 (`serialAdress = ''`) in `setValve.py`. From now on the valve can be switched using the command `sv [position]`.
 
 As the result of merging both recipes contains Illumina's sequencing routine, we refrain from publishing the complete recipe in order to preserve Illumina's copyright. Therefore you need to assemble it yourself: Make a copy your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE` and add the lines supplied in `HiTS_FLIP_RECIPE_ADDITION`. 
 
