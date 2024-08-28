@@ -32,7 +32,9 @@ For the experiments a MiSeq Sequencer (Illumina) was modified according to the c
 > If you are uncertain about any aspect of modifying the MiSeq Sequencer, it is advised that you consult with a qualified professional or directly contact the manufacturer before proceeding.
 
 ## Software Requirements
-### MiSeq Control Software 
+### MiSeq Control Software
+We used a MiSeq Control Softvare V2.6.2.1 but the experiment can also be implemented on newer versions.
+
 ### External Valve
 For the use of an external valve python 3.8 was installed on the MiSeq along with the folling packages:
 - `VICI`
@@ -50,6 +52,8 @@ Data extraction from `cif`,`loc` and`fastq`-files was performed using python 3.1
 If using an external valve, install python and copy the folder `MiSeq_Hits_Flip` to `C:\` of your MiSeq. Also install the drivers for the valve. Afterwards make the alias `sv [pos]`accessible by typing 
 `reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f`
 into the terminal on the sequencer. Afterwards you use `getSerialAdress.py` to get the serial address and add it to line 27 `serialAdress = ''` in `setValve.py`. From now on the valve can be switched by the command `sv [position]`.
+
+When running the experiment you  
 
 
 
