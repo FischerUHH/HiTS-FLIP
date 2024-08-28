@@ -1,0 +1,1 @@
+This file is empty and you can delete it after installing the directory on your MiSeq.
