@@ -26,7 +26,7 @@ For the experiments a MiSeq Sequencer (Illumina) was modified according to the c
 > 3. The University of Hamburg, including its employees, faculty, and staff, shall not be held accountable for any damage to property or persons, malfunctions, or loss of data resulting from the modification of the MiSeq Sequencer.
 > 4. You undertake all necessary precautions to ensure that the modification complies with all applicable laws, regulations, and guidelines.
 > 5. You release the University of Hamburg from any and all claims, actions, damages, liabilities, costs, and expenses (including attorney's fees) arising out of or connected with the modification of the MiSeq Sequencer.
-> 6. 6.By accessing or using this document and its associated repository, you explicitly acknowledge that you have read, understood, and agree to be bound by the terms and conditions outlined in this disclaimer. If you do not agree to these terms, you must
+> 6. By accessing or using this document and its associated repository, you explicitly acknowledge that you have read, understood, and agree to be bound by the terms and conditions outlined in this disclaimer. If you do not agree to these terms, you must
 > refrain from making any modifications to the MiSeq Sequencer and discontinue any related activities. 
 >
 > If you are uncertain about any aspect of modifying the MiSeq Sequencer, it is advised that you consult with a qualified professional or directly contact the manufacturer before proceeding.
@@ -50,10 +50,10 @@ Data extraction from `cif`,`loc` and`fastq`-files was performed using python 3.1
 If using an external valve, install python and copy the folder `MiSeq_Hits_Flip` to `C:\` of your MiSeq. Also install the drivers for the valve. Afterwards make the alias `sv [pos]`accessible by typing 
 `reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f`
 into the terminal on the sequencer. 
-Make a copy your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\` and add the lines supplied in `HiTS_FLIP_RECIPE_ADDITION`.
+As the result of merging both recipes contains Illumina's sequencing routine, we refrain from publishing the complete recipe in order to preserve Illumina's copyright. Therefore you need to assemble it yourself: Make a copy your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE` and add the lines supplied in `HiTS_FLIP_RECIPE_ADDITION`. 
 
 ## HiTS-FLIP from custom filled cartride
-Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`
+Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`.
 
 ## Changes in the configs
 
