@@ -55,12 +55,25 @@ If using an external valve, install python and copy the folder `MiSeq_Hits_Flip`
 
 into the terminal on the sequencer. Afterwards you can use `getSerialAdress.py` to get the serial address and add it to line 27 (`serialAdress = ''`) in `setValve.py`. From now on the valve can be switched using the command `sv [position]`.
 
-As the result of merging both recipes contains Illumina's sequencing routine, we refrain from publishing the complete recipe in order to preserve Illumina's copyright. Therefore you need to assemble it yourself: Make a copy your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE` and add the lines supplied in `HiTS_FLIP_RECIPE_ADDITION`. 
+As the recipe for the first approach using the external valve contains Illumina's sequencing routine, we refrain from publishing the complete recipe in order to preserve Illumina's copyright. Therefore you need to assemble it yourself: Make a copy your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE` and add the lines supplied in `HiTS_FLIP_RECIPE_ADDITION`. 
 
 ## HiTS-FLIP from custom filled cartride
 Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`.
 
 ## Changes in the configs
 
-### MiSeqOverrride
+### MiSeqOverrride.xml
+These are settings we found to be helpful. Channel Focus C corresponds with the PhiX-FM using IRDye700. The other settings might help you if no focus can be found at the beginning of read two.
 
+`[Focus Params]
+ChannelToUse = Focus C
+LowSNRContrastThreshold = 2
+DarkSampleContrastThreshold = 1`
+
+### C:\Illumina\RTA\Configs\MiSeq.Configuration.xml
+To keep the raw images and re-run the RTA after sequencing the following lines should be adapted. But be warned: this produces a lot of data and you'll have to free up drive space after every run by moving the images to an external harddrive or server.
+`<CopyIntensities>true</CopyIntensities>`
+`<DeleteImagesFilesAfterProcessing>false</DeleteImagesFilesAfterProcessing>`
+
+
+# How to use
