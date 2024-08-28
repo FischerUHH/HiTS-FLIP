@@ -48,7 +48,7 @@ Data extraction from `cif`,`loc` and`fastq`-files was performed using python 3.1
 
 
 # Installation Guide
-## HiTS-FLIP with external valve
+## HiTS-FLIP with an additional external valve
 If using an external valve, install python and copy the folder `MiSeq_Hits_Flip` to `C:\` on your MiSeq. Also install the drivers for the valve. Afterwards make the alias `sv [pos]`accessible by typing 
 
 `reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f`
@@ -75,5 +75,9 @@ To keep the raw images and re-run the RTA after sequencing the following lines s
 `<CopyIntensities>true</CopyIntensities>`
 `<DeleteImagesFilesAfterProcessing>false</DeleteImagesFilesAfterProcessing>`
 
+### D:\Illumina\MiSeq Control Software\MiSeqSoftware.Options.cfg
+`<SaveImagesToOutputForRta>true</SaveImagesToOutputForRta>
+<SaveFocusImages>true</SaveFocusImages>
+<SaveScanImages>true</SaveScanImages>`
 
 # How to use
