@@ -48,7 +48,7 @@ Data extraction from `cif`,`loc` and`fastq`-files was performed using python 3.1
 
 
 # 4. Installation Guide
-##   4.1 HiTS-FLIP with an additional external valve
+##   4.1 HiTS-FLIP using an additional external valve
 If using an external valve, install python and copy the folder `MiSeq_Hits_Flip` to `C:\` on your MiSeq. Also install the drivers for the valve. Afterwards make the alias `sv [pos]`accessible by typing 
 
 `reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f`
@@ -61,7 +61,6 @@ As the recipe for the first approach using the external valve contains Illumina'
 Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`.
 
 ##   4.3 Changes in the configs
-
 ###     4.3.1  MiSeqOverrride.xml
 These are settings we found to be helpful. Channel Focus C corresponds with the PhiX-FM using IRDye700. The other settings might help you if no focus can be found at the beginning of read two.
 
@@ -80,4 +79,8 @@ To keep the raw images and re-run the RTA after sequencing the following lines s
 <SaveFocusImages>true</SaveFocusImages>
 <SaveScanImages>true</SaveScanImages>`
 
-# 5 How to use
+# 5 How to conduct an experiment
+## 5.1 HiTS-FLIP using an additional external valve
+
+## 5.2 HiTS-FLIP from custom filled cartride
+
