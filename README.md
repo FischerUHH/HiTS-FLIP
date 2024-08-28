@@ -49,8 +49,7 @@ Data extraction from `cif`,`loc` and`fastq`-files was performed using python 3.1
 ## HiTS-FLIP with external valve
 If using an external valve, install python and copy the folder `MiSeq_Hits_Flip` to `C:\` of your MiSeq. Also install the drivers for the valve. Afterwards make the alias `sv [pos]`accessible by typing 
 `reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f`
-into the terminal on the sequencer. Afterwards you use `getSerialAdress.py` to get the serial address and add it to line 27 `serialAdress = ''` in ``
-From now on the valve can be switched by the command `sv [position]`.
+into the terminal on the sequencer. Afterwards you use `getSerialAdress.py` to get the serial address and add it to line 27 `serialAdress = ''` in `setValve.py`. From now on the valve can be switched by the command `sv [position]`.
 
 
 
