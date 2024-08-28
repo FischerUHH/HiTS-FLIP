@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- modify the SecondRead: -->
+<ReadDefinitions Version="Fraise 0.7.2 Amplicon v1.1">
+	<ReadDefinition Name="SecondRead" IsIndexed="false">
+		<FirstBase ChemistryName="FirstBase" Cycles="1"/>
+		<Imaging ChemistryName="RestrictionAndFm" Cycles="1"/> 
+		<Imaging ChemistryName="FLIP_Cycle" Cycles="NumCycles - 2"/>
+		<End ChemistryName="EndRead"/>
+	</ReadDefinition>
+</ReadDefinitions>

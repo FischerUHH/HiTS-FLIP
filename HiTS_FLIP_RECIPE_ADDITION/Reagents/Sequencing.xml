@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Reagents Name="Tremor Reagents" Version="Selector Valve Positions v2.2">
+
+<!-- add the following 1 line to Sequencing.XML:-->
+  <Reagent Name="Alt2" Description="ExternalValve" SelectorValvePosition="23" />
+  
+  
+</Reagents>

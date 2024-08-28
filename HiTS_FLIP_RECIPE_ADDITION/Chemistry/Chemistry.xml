@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<ChemistryDefinitions Version="xxx">
+
+<!-- add the following to the recipe-->
+
+
+	<ChemistryDefinition Name="FLIP_Cycle">
+		<ChemistryStep Description="Deblock" Repeat="1">
+			<Temp Duration="0" Temperature="22"/>
+			<PumpToFlowcell ReagentName="PW2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="25"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="250"/>
+			<!-- NaOH Wash -->
+			<Wait Duration="13502"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="500"/>
+			<DispenseAndWait DispenseRate="7500" Duration="300000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="250"/>
+			<!-- Formamide Wash -->
+			<Wait Duration="13512"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="250"/>
+			<DispenseAndWait DispenseRate="7500" Duration="311000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="500"/>
+			<!-- Hyb buffer wash -->
+			<Wait Duration="13503"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="500"/>
+			<DispenseAndWait Duration="300000"/>
+		</ChemistryStep>
+		<ChemistryStep Description="FmAndTempRamp" Repeat="1" IsIncorporation="true">
+			<Temp Duration="0" Temperature="22"/>
+			<!-- FM incubation -->
+			<PumpToFlowcell ReagentName="C3" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="50"/>
+			<DispenseAndWait Duration="321000"/>
+			<PumpToFlowcell ReagentName="C3" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="322000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="20"/>
+			<DispenseAndWait Duration="323000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="20"/>
+			<DispenseAndWait Duration="10000"/>
+			<Temp Duration="0" Temperature="75"/>
+			<Wait Duration="20000"/>
+			<Temp Duration="10000" Temperature="74"/>
+			<Temp Duration="10000" Temperature="73"/>
+			<Temp Duration="10000" Temperature="72"/>
+			<Temp Duration="10000" Temperature="71"/>
+			<Temp Duration="10000" Temperature="70"/>
+			<Temp Duration="10000" Temperature="69"/>
+			<Temp Duration="10000" Temperature="68"/>
+			<Temp Duration="10000" Temperature="67"/>
+			<Temp Duration="10000" Temperature="66"/>
+			<Temp Duration="10000" Temperature="65"/>
+			<Temp Duration="10000" Temperature="64"/>
+			<Temp Duration="10000" Temperature="63"/>
+			<Temp Duration="10000" Temperature="62"/>
+			<Temp Duration="10000" Temperature="61"/>
+			<Temp Duration="10000" Temperature="60"/>
+			<Temp Duration="10000" Temperature="59"/>
+			<Temp Duration="10000" Temperature="58"/>
+			<Temp Duration="10000" Temperature="57"/>
+			<Temp Duration="10000" Temperature="56"/>
+			<Temp Duration="10000" Temperature="55"/>
+			<Temp Duration="10000" Temperature="54"/>
+			<Temp Duration="10000" Temperature="53"/>
+			<Temp Duration="10000" Temperature="52"/>
+			<Temp Duration="10000" Temperature="51"/>
+			<Temp Duration="10000" Temperature="50"/>
+			<Temp Duration="10000" Temperature="49"/>
+			<Temp Duration="10000" Temperature="48"/>
+			<Temp Duration="10000" Temperature="47"/>
+			<Temp Duration="10000" Temperature="46"/>
+			<Temp Duration="10000" Temperature="45"/>
+			<Temp Duration="10000" Temperature="44"/>
+			<Temp Duration="10000" Temperature="43"/>
+			<Temp Duration="10000" Temperature="42"/>
+			<Temp Duration="10000" Temperature="41"/>
+			<Temp Duration="10000" Temperature="40"/>
+			<Temp Duration="10000" Temperature="39"/>
+			<Temp Duration="10000" Temperature="38"/>
+			<Temp Duration="15000" Temperature="37"/>
+			<!-- Hyb buffer wash -->
+			<Wait Duration="13503"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="350"/>
+			<DispenseAndWait Duration="300000"/>
+			<!-- FM incubation -->
+			<PumpToFlowcell ReagentName="C3" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="40"/>
+			<DispenseAndWait Duration="321000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="20"/>
+			<DispenseAndWait Duration="322000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="20"/>
+			<DispenseAndWait Duration="323000"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Incorporation" Repeat="1" IsIncorporation="true">
+			<Temp Duration="0" Temperature="37"/>
+			<!-- Ligand incubation -->
+			<Wait Duration="13520"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+			<DispenseAndWait Duration="331000"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="332000"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="333000"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="334000"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="335000"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="336000"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="337000"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="338000"/>
+			<Temp Duration="0" Temperature="37"/>
+			<!-- Pre-imaging buffer wash -->
+			<Wait Duration="13504"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="500" Solution="0" DispenseRate="7500" Volume="1000"/>
+			<DispenseAndWait Duration="5000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	<ChemistryDefinition Name="RestrictionAndFm">
+		<ChemistryStep Description="Buffer Wash" Repeat="1">
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="250"/>
+		</ChemistryStep>
+		<ChemistryStep Description="NaOHWash" Repeat="1">
+			<Temp Duration="0" Temperature="22"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="250"/>
+			<!-- NaOH wash -->
+			<Wait Duration="13502"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="500" Solution="0" DispenseRate="7500" Volume="1500"/>
+			<DispenseAndWait DispenseRate="7500" Duration="30000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="500"/>
+		</ChemistryStep>
+		<ChemistryStep Description="ECOR1" Repeat="1">
+			<Temp Duration="0" Temperature="37"/>
+			<!-- EcoR1 buffer and comp strand -->
+			<PumpToFlowcell ReagentName="C1" AspirationRate="500" Solution="0" DispenseRate="7500" Volume="250"/>
+			<DispenseAndWait Duration="601000"/>
+			<!-- EcoR1 HF -->
+			<PumpToFlowcell ReagentName="C2" AspirationRate="500" Solution="0" DispenseRate="7500" Volume="250"/>
+			<DispenseAndWait Duration="301000"/>
+			<!-- EcoR1 buffer and comp strand -->
+			<PumpToFlowcell ReagentName="C1" AspirationRate="500" Solution="0" DispenseRate="7500" Volume="100"/>
+			<DispenseAndWait Duration="602000"/>
+			<!-- EcoR1 HF -->
+			<PumpToFlowcell ReagentName="C2" AspirationRate="500" Solution="0" DispenseRate="7500" Volume="100"/>
+			<DispenseAndWait Duration="302000"/>
+			<Temp Duration="0" Temperature="22"/>
+			<!-- NaOH wash -->
+			<Wait Duration="13502"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="500"/>
+			<DispenseAndWait Duration="30000"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Wash1" Repeat="1">
+			<Temp Duration="0" Temperature="60"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="500"/>
+			<PumpToFlowcell ReagentName="CMS" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="75"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="20"/>
+			<DispenseAndWait DispenseRate="7500" Duration="10000"/>
+		</ChemistryStep>
+		<ChemistryStep Description="Wash2" Repeat="1">
+			<Temp Duration="0" Temperature="22"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="250"/>
+			<!-- NaOH wash -->
+			<Wait Duration="13502"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="500"/>
+			<DispenseAndWait DispenseRate="7500" Duration="1800"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="250"/>
+			<!-- Formamide wash -->
+			<Wait Duration="13512"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="350"/>
+			<DispenseAndWait DispenseRate="7500" Duration="1800"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="2000" Solution="0" DispenseRate="7500" Volume="1000"/>
+			<!-- Hyb buffer wash -->
+			<Wait Duration="13503"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="500"/>
+			<DispenseAndWait Duration="300000"/>
+		</ChemistryStep>	
+		<ChemistryStep Description="FmAndTempR" Repeat="1" IsIncorporation="true">
+			<Temp Duration="0" Temperature="25"/>
+			<!-- FM incubation -->
+			<PumpToFlowcell ReagentName="C3" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="300"/>
+			<DispenseAndWait Duration="321000"/>
+			<PumpToFlowcell ReagentName="C3" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="15"/>
+			<DispenseAndWait Duration="322000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="20"/>
+			<DispenseAndWait Duration="323000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="20"/>
+			<DispenseAndWait Duration="10000"/>
+			<Temp Duration="0" Temperature="75"/>
+			<Wait Duration="20000"/>
+			<Temp Duration="10000" Temperature="74"/>
+			<Temp Duration="10000" Temperature="73"/>
+			<Temp Duration="10000" Temperature="72"/>
+			<Temp Duration="10000" Temperature="71"/>
+			<Temp Duration="10000" Temperature="70"/>
+			<Temp Duration="10000" Temperature="69"/>
+			<Temp Duration="10000" Temperature="68"/>
+			<Temp Duration="10000" Temperature="67"/>
+			<Temp Duration="10000" Temperature="66"/>
+			<Temp Duration="10000" Temperature="65"/>
+			<Temp Duration="10000" Temperature="64"/>
+			<Temp Duration="10000" Temperature="63"/>
+			<Temp Duration="10000" Temperature="62"/>
+			<Temp Duration="10000" Temperature="61"/>
+			<Temp Duration="10000" Temperature="60"/>
+			<Temp Duration="10000" Temperature="59"/>
+			<Temp Duration="10000" Temperature="58"/>
+			<Temp Duration="10000" Temperature="57"/>
+			<Temp Duration="10000" Temperature="56"/>
+			<Temp Duration="10000" Temperature="55"/>
+			<Temp Duration="10000" Temperature="54"/>
+			<Temp Duration="10000" Temperature="53"/>
+			<Temp Duration="10000" Temperature="52"/>
+			<Temp Duration="10000" Temperature="51"/>
+			<Temp Duration="10000" Temperature="50"/>
+			<Temp Duration="10000" Temperature="49"/>
+			<Temp Duration="10000" Temperature="48"/>
+			<Temp Duration="10000" Temperature="47"/>
+			<Temp Duration="10000" Temperature="46"/>
+			<Temp Duration="10000" Temperature="45"/>
+			<Temp Duration="10000" Temperature="44"/>
+			<Temp Duration="10000" Temperature="43"/>
+			<Temp Duration="10000" Temperature="42"/>
+			<Temp Duration="10000" Temperature="41"/>
+			<Temp Duration="10000" Temperature="40"/>
+			<Temp Duration="10000" Temperature="39"/>
+			<Temp Duration="10000" Temperature="38"/>
+			<Temp Duration="15000" Temperature="37"/>
+			<Temp Duration="15000" Temperature="36"/>
+			<Temp Duration="15000" Temperature="35"/>
+			<Temp Duration="15000" Temperature="34"/>
+			<Temp Duration="15000" Temperature="33"/>
+			<Temp Duration="15000" Temperature="32"/>
+			<Temp Duration="15000" Temperature="31"/>
+			<Temp Duration="15000" Temperature="30"/>
+			<Temp Duration="15000" Temperature="29"/>
+			<Temp Duration="15000" Temperature="28"/>
+			<Temp Duration="15000" Temperature="27"/>
+			<Temp Duration="15000" Temperature="26"/>
+			<Temp Duration="15000" Temperature="25"/>
+			<!-- Hyb buffer wash -->
+			<Wait Duration="13503"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="500"/>
+			<DispenseAndWait Duration="300000"/>
+		</ChemistryStep>
+		<ChemistryStep Description="IncorpFM" Repeat="1" IsIncorporation="true">
+			<Temp Duration="0" Temperature="25"/>
+			<!-- FM incubation -->
+			<PumpToFlowcell ReagentName="C3" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="40"/>
+			<DispenseAndWait Duration="301000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="20"/>
+			<DispenseAndWait Duration="302000"/>
+			<PumpToFlowcell ReagentName="PR2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="20"/>
+			<DispenseAndWait Duration="303000"/>
+			<Temp Duration="0" Temperature="25"/>
+			<!-- Pre-imaging buffer wash -->
+			<Wait Duration="13504"/>
+			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="2000"/>
+			<DispenseAndWait Duration="5000"/>
+		</ChemistryStep>
+	</ChemistryDefinition>
+	
+<!-- dont add the following line-->
+</ChemistryDefinitions>

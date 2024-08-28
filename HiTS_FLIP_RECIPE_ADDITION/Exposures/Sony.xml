@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Exposures>
+   <!--Replace the  block of Read 2 EXCEPT CYCLE 1 with the following:-->
+   <Exposure EndCycle="999"  Name="A" Start="1200" IsIndexed="false" Read="2" StartCycle="1"  />
+   <Exposure EndCycle="999"  Name="T" Start="600" IsIndexed="false" Read="2" StartCycle="1"  />
+   <Exposure EndCycle="999"  Name="C" Start="1200" IsIndexed="false" Read="2" StartCycle="1"  />
+   <Exposure EndCycle="999"  Name="G" Start="600" IsIndexed="false" Read="2" StartCycle="1"  />
+   
+</Exposures>
