@@ -49,9 +49,13 @@ Data extraction from `cif`,`loc` and`fastq`-files was performed using python 3.1
 ## HiTS-FLIP with external valve
 If using an external valve, install python and copy the folder `MiSeq_Hits_Flip` to `C:\` of your MiSeq. Also install the drivers for the valve. Afterwards make the alias `sv [pos]`accessible by typing 
 `reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f`
-into the terminal on the sequencer. 
+into the terminal on the sequencer. Afterwards you use `getSerialAdress.py` to get the serial address and add it to line 27 `serialAdress = ''` in ``
+From now on the valve can be switched by the command `sv [position]`.
 
-getSerialAdress.py
+
+
+
+
 
 
 As the result of merging both recipes contains Illumina's sequencing routine, we refrain from publishing the complete recipe in order to preserve Illumina's copyright. Therefore you need to assemble it yourself: Make a copy your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE` and add the lines supplied in `HiTS_FLIP_RECIPE_ADDITION`. 
