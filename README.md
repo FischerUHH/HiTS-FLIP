@@ -1,17 +1,17 @@
-# Publication 
+# 1 Publication 
 
-# HiTS-FLIP
+# 2 HiTS-FLIP
 'High-throughput sequencing–fluorescent ligand interaction profiling' (HiTS-FLIP) is an experiment that enables the study of target-molecules with millions of varying DNA-sequences in parallel on a fow cell of next-generation sequencers - in this case Illumina's MiSeq.
 
 In the corresponding publication we present two different ways of examining the interactions between target-molecule and DNA, 
-##    1. Additional external valve 
+##    2.1 Additional external valve 
 The experiment can be carried out by connecting an external valve to port 23 of the internal valve and controlling it via USB. By adding specific wait-times to the recipe `HiTS_FLIP_RECIPE`, in which the execution of the sequencers main program pauses, the switching of the valve can be triggered as a custom python script reads out the `log`-files which are generated as the routine proceeds. This approach is recommended for setups which require larger reagent volumes than 3 mL and enables the user to execute the sequencing and interaction profiling in one step with minimal hands-on time. 
-##    2. Without modification of the Hardware
+##    2.2 Without modification of the Hardware
 The second approach solely  uses the internal valve of the MiSeq subsequent to a "regular" proprietary sequencing. For this method, a used cartridge of the previous sequencing run has to be customized by removing the RFID and the clear top cover. After cleaning the contained tubes carefully they can be filled with custom solutions of the desired target molecule in the corresponding buffer. The Process can be started by removing the used RFIDs from the other used consumables and holding the RFIDs of a new kit against the DFID-sensors during setup. The "new" RFIDs are not corrupted by this process and can be used regularly later on.
 Despite the requirement for an additional working-step this setup comes with integrated  cooling and a lower consumption of target-solution therefore enabling the measurement of triplicates.
 
-# Installation Guide
-## Hardware Requirements
+# 3. Installation Guide
+## 3.1 Hardware Requirements
 For the experiments a MiSeq Sequencer (Illumina) was modified according to the corresponding manuscript. 
 
 > [!CAUTION] 
@@ -31,24 +31,24 @@ For the experiments a MiSeq Sequencer (Illumina) was modified according to the c
 >
 > If you are uncertain about any aspect of modifying the MiSeq Sequencer, it is advised that you consult with a qualified professional or directly contact the manufacturer before proceeding.
 
-##    Software Requirements
-###       MiSeq Control Software
+##    3.2 Software Requirements
+###       3.2.1 MiSeq Control Software
 We used a MiSeq Control Softvare V2.6.2.1 but the experiment can also be implemented on newer versions.
 
-###       External Valve
+###       3.2.2 External Valve
 For the use of an external valve python 3.8 was installed on the MiSeq along with the folling packages:
 - `VICI`
 - `ftdi_serial`
 - `pandas`
 
-###       Data Extractrion
+###      3.2.3 Data Extractrion
 Data extraction from `cif`,`loc` and`fastq`-files was performed using python 3.11 utilizing the following packages:
 - `numpy`
 - `matplotlib`
 
 
-# Installation Guide
-##    HiTS-FLIP with an additional external valve
+# 4. Installation Guide
+##   4.1 HiTS-FLIP with an additional external valve
 If using an external valve, install python and copy the folder `MiSeq_Hits_Flip` to `C:\` on your MiSeq. Also install the drivers for the valve. Afterwards make the alias `sv [pos]`accessible by typing 
 
 `reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f`
@@ -57,12 +57,12 @@ into the terminal on the sequencer. Afterwards you can use `getSerialAdress.py` 
 
 As the recipe for the first approach using the external valve contains Illumina's sequencing routine, we refrain from publishing the complete recipe in order to preserve Illumina's copyright. Therefore you need to assemble it yourself: Make a copy your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE` and add the lines supplied in `HiTS_FLIP_RECIPE_ADDITION`. 
 
-##    HiTS-FLIP from custom filled cartride
+##   4.2 HiTS-FLIP from custom filled cartride
 Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`.
 
-##    Changes in the configs
+##   4.3 Changes in the configs
 
-###       MiSeqOverrride.xml
+###     4.3.1  MiSeqOverrride.xml
 These are settings we found to be helpful. Channel Focus C corresponds with the PhiX-FM using IRDye700. The other settings might help you if no focus can be found at the beginning of read two.
 
 `[Focus Params]
@@ -70,14 +70,14 @@ ChannelToUse = Focus C
 LowSNRContrastThreshold = 2
 DarkSampleContrastThreshold = 1`
 
-###       C:\Illumina\RTA\Configs\MiSeq.Configuration.xml
+###      4.3.2 C:\Illumina\RTA\Configs\MiSeq.Configuration.xml
 To keep the raw images and re-run the RTA after sequencing the following lines should be adapted. But be warned: this produces a lot of data and you'll have to free up drive space after every run by moving the images to an external harddrive or server.
 `<CopyIntensities>true</CopyIntensities>`
 `<DeleteImagesFilesAfterProcessing>false</DeleteImagesFilesAfterProcessing>`
 
-###       D:\Illumina\MiSeq Control Software\MiSeqSoftware.Options.cfg
+###     4.3.3  D:\Illumina\MiSeq Control Software\MiSeqSoftware.Options.cfg
 `<SaveImagesToOutputForRta>true</SaveImagesToOutputForRta>
 <SaveFocusImages>true</SaveFocusImages>
 <SaveScanImages>true</SaveScanImages>`
 
-# How to use
+# 5 How to use
