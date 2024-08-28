@@ -64,10 +64,10 @@ Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`.
 ###     4.3.1  C:\MiSeqOverrride.xml
 These are settings we found to be helpful. Channel Focus C corresponds with the PhiX-FM using IRDye700. The other settings might help you if no focus can be found at the beginning of read two.
 
-`[Focus Params]`
-`ChannelToUse = Focus C`
-`LowSNRContrastThreshold = 2`
-`DarkSampleContrastThreshold = 1`
+`[Focus Params]`   
+`ChannelToUse = Focus C`   
+`LowSNRContrastThreshold = 2`   
+`DarkSampleContrastThreshold = 1`   
 
 ###      4.3.2 C:\Illumina\RTA\Configs\MiSeq.Configuration.xml
 To keep the raw images and re-run the RTA after sequencing the following lines should be adapted. But be warned: this produces a lot of data and you'll have to free up drive space after every run by moving the images to an external harddrive or server.
