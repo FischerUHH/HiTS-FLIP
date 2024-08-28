@@ -61,7 +61,7 @@ As the recipe for the first approach using the external valve contains Illumina'
 Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`.
 
 ##   4.3 Changes in the configs
-###     4.3.1  MiSeqOverrride.xml
+###     4.3.1  C:\MiSeqOverrride.xml
 These are settings we found to be helpful. Channel Focus C corresponds with the PhiX-FM using IRDye700. The other settings might help you if no focus can be found at the beginning of read two.
 
 `[Focus Params]
