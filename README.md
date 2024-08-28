@@ -70,11 +70,11 @@ These are settings we found to be helpful. Channel Focus C corresponds with the 
 `DarkSampleContrastThreshold = 1`   
 
 ###      4.3.2 C:\Illumina\RTA\Configs\MiSeq.Configuration.xml
-To keep the raw images and re-run the RTA after sequencing the following lines should be adapted. But be warned: this produces a lot of data and you'll have to free up drive space after every run by moving the images to an external harddrive or server.
+To keep the raw images and re-run the RTA after sequencing the following lines should be adapted. But be warned: this produces a lot of data and you'll have to free up drive space after every run by moving the images to an external harddrive or server.   
 `<CopyIntensities>true</CopyIntensities>`   
 `<DeleteImagesFilesAfterProcessing>false</DeleteImagesFilesAfterProcessing>`
 
-###     4.3.3  D:\Illumina\MiSeq Control Software\MiSeqSoftware.Options.cfg
+###     4.3.3  D:\Illumina\MiSeq Control Software\MiSeqSoftware.Options.cfg   
 `<SaveImagesToOutputForRta>true</SaveImagesToOutputForRta>`   
 `<SaveFocusImages>true</SaveFocusImages>`   
 `<SaveScanImages>true</SaveScanImages>`   
