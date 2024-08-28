@@ -91,5 +91,3 @@ To keep the raw images and re-run the RTA after sequencing the following lines s
 
 ## 5.2 HiTS-FLIP from custom filled cartride
 
-# 6 Data processing
-
