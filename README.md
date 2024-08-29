@@ -53,12 +53,6 @@ For the use of an external valve, Python 3.8 was installed on the MiSeq along wi
 - `ftdi_serial`
 - `pandas`
 
-2.2.3 Data Extraction
-
-Data extraction from `"cif"`, `"loc"`, and `"fastq"` files was performed using Python 3.11 utilizing the following packages:
-- `numpy`
-- `matplotlib`
-
 # 3. Installation Guide
 
 ## 3.1 HiTS-FLIP Using an Additional External Valve
