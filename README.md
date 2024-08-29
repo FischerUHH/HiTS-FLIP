@@ -106,8 +106,9 @@ To keep the raw images and re-run the RTA after sequencing the following lines s
 
 3.3.3 D:\Illumina\MiSeq Control Software\MiSeqSoftware.Options.cfg
 
-xml
+```xml
 <SaveImagesToOutputForRta>true</SaveImagesToOutputForRta>
 <SaveFocusImages>true</SaveFocusImages>
 <SaveScanImages>true</SaveScanImages>
+```
 
