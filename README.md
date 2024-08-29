@@ -80,7 +80,7 @@ Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`. Specif
 
 These are settings we found to be helpful. Channel Focus C corresponds with the PhiX-FM using IRDye700. The other settings might help you if no focus can be found at the beginning of read two.
 
-```
+```cfg
 [Focus Params]
 ChannelToUse = Focus C
 LowSNRContrastThreshold = 2
