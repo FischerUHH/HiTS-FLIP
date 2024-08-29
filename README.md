@@ -57,7 +57,7 @@ For the use of an external valve, Python 3.8 was installed on the MiSeq along wi
 
 ## 3.1 HiTS-FLIP Using an Additional External Valve
 
-If using an external valve, install Python and copy the folder `MiSeq_Hits_Flip` to `C:\` on your MiSeq. Also, install the drivers for the valve. Afterward, make the alias `sv [pos]` accessible by typing:
+If using an external valve, install Python and copy the folder `MiSeq_Hits_Flip` to `C:\` on your MiSeq. Also, install the drivers for the valve. Afterward, make the alias `sv [pos]` accessible by typing
 
 ```bash
 reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f
