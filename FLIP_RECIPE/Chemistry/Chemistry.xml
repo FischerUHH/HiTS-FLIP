@@ -77,7 +77,7 @@
 		
 		<ChemistryStep Description="TempRamp" Repeat="1" IsIncorporation="true">
 			<Temp Duration="0" Temperature="75"/>
-			<Wait Duration="10000"/>
+			<Wait Duration="20000"/>
 			<Temp Duration="5000" Temperature="74"/>
 			<Temp Duration="5000" Temperature="73"/>
 			<Temp Duration="5000" Temperature="72"/>
