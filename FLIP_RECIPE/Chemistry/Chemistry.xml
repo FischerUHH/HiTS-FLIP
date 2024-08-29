@@ -54,7 +54,7 @@
 		
 		<ChemistryStep Description="FormamideWash" Repeat="3">
 			<Temp Duration="0" Temperature="40"/>
-			<PumpToFlowcell ReagentName="FAD" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="500"/> <!-- 20 -->
+			<PumpToFlowcell ReagentName="FAD" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="20"/> <!-- 20 -->
 			<DispenseAndWait DispenseRate="7500" Duration="62000"/>
 		</ChemistryStep>
 		
