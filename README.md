@@ -8,7 +8,7 @@ Pre-print: https://www.biorxiv.org/content/10.1101/2024.06.24.600375v1
 
 'High-throughput sequencing–fluorescent ligand interaction profiling' (HiTS-FLIP) is an experiment that enables the study of target molecules with millions of varying DNA sequences in parallel on a flow cell of next-generation sequencers - in this case, Illumina's MiSeq.
 
-In the corresponding publication, we present two different ways of examining the interactions between target molecules and DNA,
+In the corresponding publication, we present two different approaches of examining the interactions between target molecules and DNA,
 
 ## 1.1 Additional External Valve
 
