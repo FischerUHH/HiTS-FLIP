@@ -68,7 +68,7 @@ into the terminal on the sequencer. Afterward, you can use `getSerialAdress.py` 
 
 As the recipe for the first approach using the external valve contains Illumina's sequencing routine, we refrain from publishing the complete recipe to preserve Illumina's copyright. Therefore, you need to assemble it yourself: Make a copy of your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE`, and add the lines/modifications supplied in `HiTS_FLIP_RECIPE_ADDITION`.
 
-While executing the custom `HiTS_FLIP_RECIPE` by specifying the recipe in the sample sheet prior to sequencing, [HiTS_FLIP_main.py](/HiTS-FLIP/Mi) has to be run to monitor the progress of sequencing and FLIP by reading out the log-files.
+While executing the custom `HiTS_FLIP_RECIPE` by specifying the recipe in the sample sheet prior to sequencing, [HiTS_FLIP_main.py](MiSeq_Hits_Flip/PythonCode/HiTS_FLIP_main.py) has to be run to monitor the progress of sequencing and FLIP by reading out the log-files.
 
 ## 3.2 HiTS-FLIP from Custom Filled Cartridge
 
