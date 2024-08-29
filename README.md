@@ -98,10 +98,10 @@ DarkSampleContrastThreshold = 1
 
 To keep the raw images and re-run the RTA after sequencing the following lines should be adapted. But be warned: this produces a lot of data and you'll have to free up drive space after every run by moving the images to an external hard-drive or server.   
 
-xml
+```xml
 <CopyIntensities>true</CopyIntensities>
 <DeleteImagesFilesAfterProcessing>false</DeleteImagesFilesAfterProcessing>
-
+```
 
 
 3.3.3 D:\Illumina\MiSeq Control Software\MiSeqSoftware.Options.cfg
