@@ -72,7 +72,7 @@ While executing the custom `HiTS_FLIP_RECIPE` by specifying the recipe in the sa
 
 ## 3.2 HiTS-FLIP from Custom Filled Cartridge
 
-Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`.
+Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`. Specify the custom recipe in the samplesheet.
 
 ## 3.3 Changes in the Configs
 
