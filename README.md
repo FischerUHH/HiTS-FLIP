@@ -49,8 +49,8 @@ MiSeq Control Software V2.6.2.1
 2.2.2 External Valve
 
 For the control of the external valve, Python 3.8 was installed on the MiSeq along with the following packages:
-- `VICI`
-- `ftdi_serial`
+- [vicivalve](https://pypi.org/project/vicivalve/)
+- [ftdi_serial](https://pypi.org/project/ftdi-serial/)
 - `pandas`
 
 # 3. Installation Guide
