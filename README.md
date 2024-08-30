@@ -16,7 +16,7 @@ The experiment can be carried out by connecting an external valve to port 23 of 
 
 ## 1.2 Without Modification of the Sequencer
 
-This approach starts with a "regular" proprietary sequencing of the library. The FLIP is performed in a second experiment solely using the internal valve of the MiSeq. A used cartridge of the previous sequencing run has to be customized by removing the RFID and the clear top cover. After cleaning the contained tubes carefully, they can be filled with custom solutions of the desired target molecule in the corresponding buffer. The FLIP can be started by removing the used RFIDs from the other used consumables and holding the RFIDs of a new (or a previous run, thait failed before the completion of cycle 1) kit against the RFID sensors during setup. The "new" RFIDs are not corrupted by this process and can be used regularly later on. Despite the requirement for an additional working step, this setup comes with integrated cooling and a lower consumption of target solution.
+This approach starts with a "regular" proprietary sequencing of the library. The FLIP is performed in a second experiment solely using the internal valve of the MiSeq. A used cartridge of the previous sequencing run has to be customized by removing the RFID and the clear top cover. After cleaning the contained tubes carefully, they can be filled with custom solutions of the desired target molecule in the corresponding buffer. The FLIP can be started by removing the used RFIDs from the other used consumables and holding the RFIDs of a new (or a previous run, that failed before the completion of cycle 1) kit against the RFID sensors during setup. The "new" RFIDs are not corrupted by this process and can be used regularly later on. Despite the requirement for an additional working step, this setup comes with integrated cooling and a lower consumption of target solution.
 
 # 2. Installation Guide
 
@@ -57,18 +57,17 @@ For the control of the external valve, Python 3.8 was installed on the MiSeq alo
 
 ## 3.1 HiTS-FLIP Using an Additional External Valve
 
-If using an external valve, install Python and copy the folder [MiSeq_Hits_Flip](MiSeq_Hits_Flip) to `C:\` on your MiSeq. Also, install the drivers for the valve. Afterward, make the alias `sv [pos]` accessible by typing
+If using an external valve, install Python and copy the folder [MiSeq_Hits_Flip](MiSeq_Hits_Flip) to `C:\` on your MiSeq. Also, install the drivers for the valve. Afterwards, make the alias `sv [pos]` accessible by typing   
 
 ```bash
 reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f
-```
-
-
-into the terminal on the sequencer. Afterward, you can use [getSerialAdress.py](MiSeq_Hits_Flip/PythonCode/getSerialAdress.py) to get the serial address and add it to line 27 in [setValve.py](MiSeq_Hits_Flip/PythonCode/setValve.py). From now on the valve can be switched using the command `sv [position]`. Every command send to and recieved from the valve will be logged to [ViciVavleLogs](MiSeq_Hits_Flip/ViciVavleLogs/) for quality control.
+```   
+into the terminal on the sequencer. Afterwards, you can use [getSerialAdress.py](MiSeq_Hits_Flip/PythonCode/getSerialAdress.py) to get the serial address and add it to line 27 in [setValve.py](MiSeq_Hits_Flip/PythonCode/setValve.py). From now on the valve can be switched using the command `sv [position]`. Every command send to and recieved from the valve will be logged to [ViciVavleLogs](MiSeq_Hits_Flip/ViciVavleLogs/) for quality control.
 
 As the recipe contains Illumina's sequencing routine, we refrain from publishing the complete recipe to preserve Illumina's copyright. Therefore, you need to assemble it yourself: Make a copy of your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE`, and add the lines/modifications supplied in [HiTS_FLIP_RECIPE_ADDITION](HiTS_FLIP_RECIPE_ADDITION).
 
-While executing the custom `HiTS_FLIP_RECIPE` by specifying the recipe in the sample sheet prior to sequencing, [HiTS_FLIP_main.py](HiTS_FLIP_Logs/PythonCode/HiTS_FLIP_main.py) has to be run to monitor the progress of sequencing and FLIP by reading out the log-files. All relevant events will be protocolled in [HiTS_FLIP_Logs](HiTS_FLIP_Logs/HiTS_FLIP_Logs).
+While executing the custom `HiTS_FLIP_RECIPE` by specifying the recipe in the sample sheet prior to sequencing, [HiTS_FLIP_main.py](HiTS_FLIP_Logs/PythonCode/HiTS_FLIP_main.py) has to be run to monitor the progress of sequencing and FLIP by reading out the log-files. As the 
+All relevant events will be protocolled in [HiTS_FLIP_Logs](HiTS_FLIP_Logs/HiTS_FLIP_Logs).
 
 ## 3.2 HiTS-FLIP from Custom Filled Cartridge
 
