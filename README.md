@@ -6,7 +6,7 @@ Pre-print: https://www.biorxiv.org/content/10.1101/2024.06.24.600375v1
 
 # 1 HiTS-FLIP
 
-'High-throughput sequencing–fluorescent ligand interaction profiling' (HiTS-FLIP) is an experiment that enables the study of target molecules with millions of varying DNA sequences in parallel on a flow cell of next-generation sequencers - in this case, Illumina's MiSeq.
+'High-throughput sequencing–fluorescent ligand interaction profiling' (HiTS-FLIP) is an experiment that enables the study of interactions of target molecules with millions of varying DNA sequences in parallel on a flow cell of next-generation sequencers - in this case, Illumina's MiSeq.
 
 In the corresponding publication, we present two different approaches of examining the interactions between target molecules and DNA:
 
@@ -44,11 +44,11 @@ For the experiments, a MiSeq sequencer (Illumina) was modified according to the 
 
 2.2.1 MiSeq Control Software
 
-We used MiSeq Control Software V2.6.2.1 but the experiment can also be implemented on newer versions.
+MiSeq Control Software V2.6.2.1 
 
 2.2.2 External Valve
 
-For the use of an external valve, Python 3.8 was installed on the MiSeq along with the following packages:
+For the control of the external valve, Python 3.8 was installed on the MiSeq along with the following packages:
 - `VICI`
 - `ftdi_serial`
 - `pandas`
@@ -64,11 +64,11 @@ reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macro
 ```
 
 
-into the terminal on the sequencer. Afterward, you can use [getSerialAdress.py](MiSeq_Hits_Flip/PythonCode/getSerialAdress.py) to get the serial address and add it to line 27 in [setValve.py](MiSeq_Hits_Flip/PythonCode/setValve.py). From now on the valve can be switched using the command `sv [position]`. Every command send to and recieved from the valve will be logged to [ViciVavleLogs](MiSeq_Hits_Flip/ViciVavleLogs/)
+into the terminal on the sequencer. Afterward, you can use [getSerialAdress.py](MiSeq_Hits_Flip/PythonCode/getSerialAdress.py) to get the serial address and add it to line 27 in [setValve.py](MiSeq_Hits_Flip/PythonCode/setValve.py). From now on the valve can be switched using the command `sv [position]`. Every command send to and recieved from the valve will be logged to [ViciVavleLogs](MiSeq_Hits_Flip/ViciVavleLogs/) for quality control.
 
-As the recipe for the first approach using the external valve contains Illumina's sequencing routine, we refrain from publishing the complete recipe to preserve Illumina's copyright. Therefore, you need to assemble it yourself: Make a copy of your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE`, and add the lines/modifications supplied in [HiTS_FLIP_RECIPE_ADDITION](HiTS_FLIP_RECIPE_ADDITION).
+As the recipe contains Illumina's sequencing routine, we refrain from publishing the complete recipe to preserve Illumina's copyright. Therefore, you need to assemble it yourself: Make a copy of your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE`, and add the lines/modifications supplied in [HiTS_FLIP_RECIPE_ADDITION](HiTS_FLIP_RECIPE_ADDITION).
 
-While executing the custom `HiTS_FLIP_RECIPE` by specifying the recipe in the sample sheet prior to sequencing, [HiTS_FLIP_main.py](MiSeq_Hits_Flip/PythonCode/HiTS_FLIP_main.py) has to be run to monitor the progress of sequencing and FLIP by reading out the log-files.
+While executing the custom `HiTS_FLIP_RECIPE` by specifying the recipe in the sample sheet prior to sequencing, [HiTS_FLIP_main.py](HiTS_FLIP_Logs/PythonCode/HiTS_FLIP_main.py) has to be run to monitor the progress of sequencing and FLIP by reading out the log-files. All relevant events will be protocolled in [HiTS_FLIP_Logs](HiTS_FLIP_Logs/HiTS_FLIP_Logs).
 
 ## 3.2 HiTS-FLIP from Custom Filled Cartridge
 
