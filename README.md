@@ -66,7 +66,7 @@ into the terminal on the sequencer. Afterwards, you can use [getSerialAdress.py]
 
 As the recipe contains Illumina's sequencing routine, we refrain from publishing the complete recipe to preserve Illumina's copyright. Therefore, you need to assemble it yourself: Make a copy of your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE`, and add the lines/modifications supplied in [HiTS_FLIP_RECIPE_ADDITION](HiTS_FLIP_RECIPE_ADDITION).
 
-While executing the custom `HiTS_FLIP_RECIPE` by specifying the recipe in the sample sheet prior to sequencing, [HiTS_FLIP_main.py](HiTS_FLIP_Logs/PythonCode/HiTS_FLIP_main.py) has to be run to monitor the progress of sequencing and FLIP by reading out the log-files. Since the target must be delivered in varying concentrations during different cycles of the FLIP, each cycle is paired with a corresponding port in [HiTS_FLIP_ini.xlsx](MiSeq_Hits_Flip/HiTS_FLIP_ini/HiTS_FLIP_ini.xlsx).
+While executing the custom `HiTS_FLIP_RECIPE` by specifying the recipe in the sample sheet prior to sequencing, [HiTS_FLIP_main.py](HiTS_FLIP_Logs/PythonCode/HiTS_FLIP_main.py) has to be run to monitor the progress of sequencing and FLIP by reading out the log-files. Since the target must be delivered in varying concentrations during different cycles of the FLIP, each cycle is paired with a corresponding port in [HiTS_FLIP_ini.xlsx](MiSeq_Hits_Flip/HiTS_FLIP_Inis/HiTS_FLIP_ini.xlsx).
 All relevant events will be protocolled in [HiTS_FLIP_Logs](HiTS_FLIP_Logs/HiTS_FLIP_Logs).
 
 ## 3.2 HiTS-FLIP from Custom Filled Cartridge
