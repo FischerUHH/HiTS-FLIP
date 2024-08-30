@@ -64,7 +64,7 @@ reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macro
 ```
 
 
-into the terminal on the sequencer. Afterward, you can use [getSerialAdress.py](MiSeq_Hits_Flip/PythonCode/getSerialAdress.py) to get the serial address and add it to line 27 in [setValve.py](MiSeq_Hits_Flip/PythonCode/setValve.py). From now on the valve can be switched using the command `sv [position]`.
+into the terminal on the sequencer. Afterward, you can use [getSerialAdress.py](MiSeq_Hits_Flip/PythonCode/getSerialAdress.py) to get the serial address and add it to line 27 in [setValve.py](MiSeq_Hits_Flip/PythonCode/setValve.py). From now on the valve can be switched using the command `sv [position]`. Every command send to and recieved from the valve will be logged to [ViciVavleLogs](MiSeq_Hits_Flip/PythonCode/ViciVavleLogs)
 
 As the recipe for the first approach using the external valve contains Illumina's sequencing routine, we refrain from publishing the complete recipe to preserve Illumina's copyright. Therefore, you need to assemble it yourself: Make a copy of your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE`, and add the lines/modifications supplied in [HiTS_FLIP_RECIPE_ADDITION](HiTS_FLIP_RECIPE_ADDITION).
 
