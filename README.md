@@ -57,22 +57,22 @@ For the use of an external valve, Python 3.8 was installed on the MiSeq along wi
 
 ## 3.1 HiTS-FLIP Using an Additional External Valve
 
-If using an external valve, install Python and copy the folder `MiSeq_Hits_Flip` to `C:\` on your MiSeq. Also, install the drivers for the valve. Afterward, make the alias `sv [pos]` accessible by typing
+If using an external valve, install Python and copy the folder [MiSeq_Hits_Flip](MiSeq_Hits_Flip) to `C:\` on your MiSeq. Also, install the drivers for the valve. Afterward, make the alias `sv [pos]` accessible by typing
 
 ```bash
 reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"C:\MiSeq_Hits_Flip\BatchFiles\Makros.doskey\"" /f
 ```
 
 
-into the terminal on the sequencer. Afterward, you can use `getSerialAdress.py` to get the serial address and add it to line 27 in `setValve.py`. From now on the valve can be switched using the command `sv [position]`.
+into the terminal on the sequencer. Afterward, you can use [getSerialAdress.py](MiSeq_Hits_Flip/PythonCode/getSerialAdress.py) to get the serial address and add it to line 27 in [setValve.py](MiSeq_Hits_Flip/PythonCode/setValve.py). From now on the valve can be switched using the command `sv [position]`.
 
-As the recipe for the first approach using the external valve contains Illumina's sequencing routine, we refrain from publishing the complete recipe to preserve Illumina's copyright. Therefore, you need to assemble it yourself: Make a copy of your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE`, and add the lines/modifications supplied in `HiTS_FLIP_RECIPE_ADDITION`.
+As the recipe for the first approach using the external valve contains Illumina's sequencing routine, we refrain from publishing the complete recipe to preserve Illumina's copyright. Therefore, you need to assemble it yourself: Make a copy of your `Amplicon` recipe from `D:\Illumina\MiSeq Control Software\CustomRecipe\`, rename it to `HiTS_FLIP_RECIPE`, and add the lines/modifications supplied in [HiTS_FLIP_RECIPE_ADDITION](HiTS_FLIP_RECIPE_ADDITION).
 
 While executing the custom `HiTS_FLIP_RECIPE` by specifying the recipe in the sample sheet prior to sequencing, [HiTS_FLIP_main.py](MiSeq_Hits_Flip/PythonCode/HiTS_FLIP_main.py) has to be run to monitor the progress of sequencing and FLIP by reading out the log-files.
 
 ## 3.2 HiTS-FLIP from Custom Filled Cartridge
 
-Copy `FLIP_RECIPE` to `D:\Illumina\MiSeq Control Software\CustomRecipe\`. Specify the custom recipe in the samplesheet.
+Copy [FLIP_RECIPE](FLIP_RECIPE) to `D:\Illumina\MiSeq Control Software\CustomRecipe\`. Specify the custom recipe in the samplesheet.
 
 ## 3.3 Changes in the Configs
 
