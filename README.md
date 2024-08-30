@@ -6,7 +6,7 @@ Pre-print: https://www.biorxiv.org/content/10.1101/2024.06.24.600375v1
 
 # 1 HiTS-FLIP
 
-'High-throughput sequencing–fluorescent ligand interaction profiling' (HiTS-FLIP) is an experiment that enables the study of interactions of target molecules with millions of varying DNA sequences in parallel on a flow cell of next-generation sequencers - in this case, Illumina's MiSeq.
+'High-throughput sequencing–fluorescent ligand interaction profiling' (HiTS-FLIP) is an experiment that enables the study of interactions of target molecules with millions of varying DNA sequences in parallel on the flow cell of next-generation sequencers - in this case, a MiSeq (Illumina, Inc.).
 
 In the corresponding publication, we present two different approaches of examining the interactions between target molecules and DNA:
 
@@ -16,7 +16,7 @@ The experiment can be carried out by connecting an external valve to port 23 of 
 
 ## 1.2 Without Modification of the Sequencer
 
-This approach starts with a "regular" proprietary sequencing of the library. The FLIP is performed in a second experiment solely using the internal valve of the MiSeq. A used cartridge of the previous sequencing run has to be customized by removing the RFID and the clear top cover. After cleaning the contained tubes carefully, they can be filled with custom solutions of the desired target molecule in the corresponding buffer. The FLIP can be started by removing the used RFIDs from the other used consumables and holding the RFIDs of a new kit against the RFID sensors during setup. The "new" RFIDs are not corrupted by this process and can be used regularly later on. Despite the requirement for an additional working step, this setup comes with integrated cooling and a lower consumption of target solution.
+This approach starts with a "regular" proprietary sequencing of the library. The FLIP is performed in a second experiment solely using the internal valve of the MiSeq. A used cartridge of the previous sequencing run has to be customized by removing the RFID and the clear top cover. After cleaning the contained tubes carefully, they can be filled with custom solutions of the desired target molecule in the corresponding buffer. The FLIP can be started by removing the used RFIDs from the other used consumables and holding the RFIDs of a new (or a previous run, thait failed before the completion of cycle 1) kit against the RFID sensors during setup. The "new" RFIDs are not corrupted by this process and can be used regularly later on. Despite the requirement for an additional working step, this setup comes with integrated cooling and a lower consumption of target solution.
 
 # 2. Installation Guide
 
