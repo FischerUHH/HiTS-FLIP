@@ -24,7 +24,7 @@
 			<PumpToFlowcell ReagentName="Alt2" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="500"/>
 			<DispenseAndWait Duration="300000"/>
 		</ChemistryStep>
-		<ChemistryStep Description="FmAndTempRamp" Repeat="1" IsIncorporation="true">
+		<ChemistryStep Description="ArrayGen" Repeat="1" IsIncorporation="true">
 			<Temp Duration="0" Temperature="22"/>
 			<!-- FM incubation -->
 			<PumpToFlowcell ReagentName="C3" AspirationRate="250" Solution="0" DispenseRate="7500" Volume="50"/>
